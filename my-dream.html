@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Itim', cursive;
+      background-color: #1a1a1a; /* Background black */
+      color: white; /* Text color white */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sidebar Styles */
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      padding-top: 20px;
+      transition: 0.3s;
+      border-right: 5px solid #ffcc00; /* Yellow border */
+    }
+
+    .sidenav a {
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      background-color: #575757;
+      color: #ffcc00; /* Yellow hover effect */
+      transform: scale(1.1); /* Hover scaling effect */
+    }
+
+    .sidenav .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 250px;
+      padding: 20px;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffcc00; /* Yellow for heading */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adding shadow effect to text */
+      animation: fadeIn 1s ease-out;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #f1f1f1;
+      animation: fadeIn 2s ease-out; /* Fade-in effect for paragraph */
+    }
+
+    img {
+      width: 80%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+      border: 5px solid #ffcc00;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      animation: slideIn 1s ease-out;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .sidenav {
+        width: 200px;
+      }
+      .main {
+        margin-left: 200px;
+      }
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateX(-50px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Side Navigation -->
+  <div class="sidenav" id="mySidenav">
+    <span class="close-btn" onclick="closeNav()">×</span>
+    <a href="index.html">About Me</a>
+    <a href="my-dream.html">My Dream</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>ความใฝ่ฝันสูงสุด</h1>
+    <p>ความใฝ่ฝันสูงสุดคืออยากเป็นตากล่องถ่าย Video และ ได้เข้าทำงานเป็นสมาชิกช่อง Rubsarb Production</p>
+    <img src="Rubsarb.png" alt="Rubsarb Logo">
+
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.querySelector('.main').style.marginLeft = "250px";
+    }
+
+    function clos

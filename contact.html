@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Itim', cursive;
+      background-color: #1a1a1a; /* Background black */
+      color: white; /* Text color white */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sidebar Styles */
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #222; /* Dark gray background */
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      background-color: #ffcc00; /* Yellow highlight */
+      color: black; /* Black text when hovered */
+    }
+
+    .sidenav .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 250px;
+      padding: 20px;
+      background-color: #111; /* Dark background */
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #ffcc00; /* Yellow heading */
+      margin: 10px 0;
+    }
+
+    .social img {
+      border: none;
+      width: 200px;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    .social {
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .sidenav {
+        width: 200px;
+      }
+      .main {
+        margin-left: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Side Navigation -->
+  <div class="sidenav" id="mySidenav">
+    <span class="close-btn" onclick="closeNav()">×</span>
+    <a href="index.html">About Me</a>
+    <a href="my-dream.html">My Dream</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>ช่องทางการติดต่อ และ Social</h1>
+    <h1>
+      <style>
+        .main {
+  text-align: center; /* จัดข้อความให้อยู่กึ่งกลางในกล่อง */
+}
+        .main img {
+          border: none; /* ลบกรอบรอบรูป */
+          width: 200px;
+          height: auto;
+        }
+        
+      </style>
+      <h1>Facebook : Sirawit wongsukchaikit</h1>
+      <a href="https://www.facebook.com/sirawit.wongsukchaikit/" target="_blank">
+        <img src="f_logo_RGB-Blue_1024.png" alt="Facebook Logo">
+    </a>
+    <div class="youtube">
+    <style>
+        .youtube {
+          text-align: center; 
+        }
+
+        .youtube img {
+          border: none; 
+          width: 280px;
+          height: auto;
+        }
+    </style>
+    <h1>Youtube : RealDurax</h1>
+  <a href="https://www.youtube.com/@realdurax" target="_blank">
+    <img src="youtube_PNG102349.png" alt="youtube_PNG102349"class="youtube">
+</a>
+<div class="discord">
+<style>
+  .discord {
+          text-align: center; 
+        }
+  .discord img {
+          border: none;
+          width: 200px;
+          height: auto;
+  }
+</style>
+<h1>Discord : tag#: rdx0407</h1>
+  <a href="" target="_blank">
+    <img src="LOGO-DISCORD.png" alt="Discord"class="discord">
+</a>
+
+<div class="phone">
+  <style>
+    .phone {
+    text-align: center; 
+  }
+.phone img {
+    border: none;
+    width: 200px;
+    height: auto;
+}
+  </style> 
+</div>
+<h1>Phone : 085-847-8479</h1>
+  <a href="" target="_blank">
+    <img src="phone.png" alt="phone"class="phone">
+</a>
+
+
+  <!-- JavaScript -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.querySelector('.main').style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.querySelector('.main').style.marginLeft = "0";
+    }
+  </script>
+</body>
+</html>

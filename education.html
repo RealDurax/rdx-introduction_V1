@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Itim', cursive;
+      background-color: #1a1a1a; /* Background black */
+      color: white; /* Text color white */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sidebar Styles */
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      padding-top: 20px;
+      transition: 0.3s;
+      border-right: 5px solid #ffcc00; /* Yellow border */
+    }
+
+    .sidenav a {
+      padding: 15px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      background-color: #575757;
+      color: #ffcc00; /* Yellow hover effect */
+      transform: scale(1.1); /* Hover scaling effect */
+    }
+
+    .sidenav .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 250px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #ffcc00; /* Yellow heading */
+      margin: 10px 0;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #9d1212;
+      color: white;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #333; /* Dark background for even rows */
+    }
+
+    tr:nth-child(odd) {
+      background-color: #444; /* Slightly lighter dark background for odd rows */
+    }
+
+    tr:hover {
+      background-color: #575757; /* Highlight row on hover */
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .sidenav {
+        width: 200px;
+      }
+      .main {
+        margin-left: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Side Navigation -->
+  <div class="sidenav" id="mySidenav">
+    <span class="close-btn" onclick="closeNav()">×</span>
+    <a href="index.html">About Me</a>
+    <a href="my-dream.html">My Dream</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>ประวัติการศึกษา</h1>
+    
+    <table class="education-table">
+      <thead>
+        <tr>
+          <th>ปีการศึกษา</th>
+          <th>วุฒิการศึกษา</th>
+          <th>สถาบันการศึกษา</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ปีที่ 1 - 4</td>
+          <td>ประถมศึกษา</td>
+          <td>โรงเรียนจิระศาสตร์วิทยา</td>
+        </tr>
+        <tr>
+          <td>ปีที่ 5 - 6</td>
+          <td>ประถมศึกษา</td>
+          <td>โรงเรียนวัดช่างทองบุญบำรุงราษฏร์</td>
+        </tr>
+        <tr>
+          <td>ปีที่ 1 - 3</td>
+          <td>มัธยมศึกษา</td>
+          <td>โรงเรียนอยุธยาวิทยาลัย</td>
+        </tr>
+        <tr>
+          <td>ปีที่ 4 - 6</td>
+          <td>มัธยมศึกษา</td>
+          <td>โรงเรียนอยุธยาวิทยาลัย</td>
+        </tr>
+        <tr>
+          <td>ปีที่ 1 - 4</td>
+          <td>ปริญญาตรี</td>
+          <td>มหาวิทยาลัยราชมงคลสุวรรณ์ภูมิ</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.querySelector('.main').style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.querySelector('.main').style.marginLeft = "0";
+    }
+  </script>
+</body>
+</html>
